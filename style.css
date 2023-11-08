@@ -189,6 +189,17 @@ li {
   transition: width var(--animation-duration);
 }
 
+.navbar .container .close-button a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: var(--inline-gap);
+  width: 0px;
+  height: 0px;
+  background-color: var(--color-primary);
+  transition: width var(--animation-duration);
+}
+
 .navbar .container li a:hover::before {
   width: 100%;
 }

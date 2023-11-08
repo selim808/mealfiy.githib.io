@@ -15,6 +15,7 @@
 
     z-index: 90;
     right: 0px;
+    right: -350px;
     top: 0px;
 
     transition: all 0.4s;
@@ -41,19 +42,24 @@
     margin-right: 30px;
   }
 
-  .navbar:has(input#check:checked) ul {
-    right: -350px;
+  .navbar:has(:target) ul {
+    right: 0px;
   }
 
   .navbar .container .menu .checkbtn {
     display: block;
   }
 
-  :root:has(.navbar input#check:checked) .overlay-menu {
-    display: none;
+  :root:has(.navbar:target) .overlay-menu {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.575);
   }
 
-  :root:has(.navbar input#check) .overlay-menu {
+  :root:has(.navbar:target) .overlay-menu {
     position: fixed;
     display: block;
     width: 100vw;
@@ -166,5 +172,8 @@
 
     width: 100%;
     height: 100%;
+  }
+  .contact .container {
+    padding: 90px 15px;
   }
 }
