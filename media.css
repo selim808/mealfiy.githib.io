@@ -49,6 +49,9 @@
   .navbar .container .menu .checkbtn {
     display: block;
   }
+  .navbar .container .menu  {
+    display: block;
+  }
 
   :root:has(.navbar:target) .overlay-menu {
     position: fixed;

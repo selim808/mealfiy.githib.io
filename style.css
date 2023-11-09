@@ -269,6 +269,7 @@ body:has(.chefs:target) .navbar .container li a[href="#chefs"]::before {
 .navbar .container .menu {
   scale: 1.6;
   cursor: pointer;
+  display: none;
 }
 .navbar .container .menu input {
   display: none;
