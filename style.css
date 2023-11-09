@@ -334,6 +334,7 @@ body:has(.chefs:target) .navbar .container li a[href="#chefs"]::before {
   display: flex;
   gap: 40px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .home .container .description .button-group button {
@@ -363,6 +364,7 @@ body:has(.chefs:target) .navbar .container li a[href="#chefs"]::before {
   color: var(--color-default);
   cursor: pointer;
   transition: all var(--animation-duration);
+  min-width: 167px;
 }
 
 .home .container .description .button-group .youtube:hover {
@@ -385,6 +387,7 @@ body:has(.chefs:target) .navbar .container li a[href="#chefs"]::before {
   align-items: center;
   justify-content: center;
   width: 55px;
+  min-width: 55px;
   height: 55px;
   border-radius: calc(55px / 2);
   background-color: white;

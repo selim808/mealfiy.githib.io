@@ -183,6 +183,13 @@
     width: 66%;
     height: 100%;
   }
+  .home .container .description .button-group {
+    gap: 20px;
+  }
+  .home .container .description .button-group button {
+    min-width: 120px;
+    padding: 0px 7px;
+  }
   .contact .container {
     padding: 90px 15px;
   }
