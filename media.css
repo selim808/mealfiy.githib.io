@@ -172,9 +172,7 @@
   .navbar .container {
     padding: 0px 20px;
   }
-  .navbar:has(:target) {
-    left: 100%;
-  }
+
   .navbar .container ul {
     padding: 0px 30px;
 
